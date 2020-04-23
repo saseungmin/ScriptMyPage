@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTP-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.1/animate.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/text.css">
+<link rel="stylesheet" href="css/main.css">
+<title>seungmin</title>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed"
+				data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+				aria-expanded="false">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="main.html">SeungMin</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="main.html">메인</a></li>
+				<li><a href="manager.html">홈페이지 소개</a></li>
+				<li><a href="board.html">게시판</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+         		<li class="dropdown">
+          			<a id="users" href="#" class="dropdown-toggle" 
+            			data-toggle="dropdown" role="button" aria-haspopup="true" 
+            			aria-expanded="false">접속하기 <span class="caret"></span></a>
+        			<ul class="dropdown-menu">
+              			<li id="login_li" style="display: block;"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>&nbsp;로그인</a></li>
+              			<li id="join_li"><a href="join.html"><span class="glyphicon glyphicon-user"></span>&nbsp;회원가입</a></li>
+           			 </ul>    
+         		</li>
+       		</ul>
+			<ul class="nav navbar-nav navbar-right">
+         		<li class="dropdown">
+          			<a href="#" class="dropdown-toggle" 
+            			data-toggle="dropdown" role="button" aria-haspopup="true" 
+            			aria-expanded="false">회원관리 <span class="caret"></span></a>
+        			<ul class="dropdown-menu">
+						<li id="userSetting" style="display: block;"><a href="member.html"><span class="glyphicon glyphicon-cog"></span>&nbsp;회원관리</a></li>
+						<li id="logout_li" style="display: block;"><a href="#"><span class="glyphicon glyphicon-log-out"></span>&nbsp;로그아웃</a></li>
+						<li><a href="agree.html"><span class="glyphicon glyphicon-check"></span>&nbsp;이용약관</a></li>
+           			</ul>    
+         		</li>
+       		</ul>			
+		</div>
+	</nav>
+
+<div class="container-fluid">
+	<div class="row">
+		<div id="sg-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel" data-slide-to="1" class=""></li>
+				<li data-target="#carousel" data-slide-to="2" class=""></li>
+			</ol>
+			<div class="carousel-inner carousel-zoom">
+				<div class="item active"><img class="img-responsive" src="https://ununsplash.imgix.net/photo-1416339134316-0e91dc9ded92?q=75&fm=jpg&s=883a422e10fc4149893984019f63c818" alt="">
+				  <div class="carousel-caption">
+					<h1  data-animation="animated zoomInLeft" class="cap-txt ">안녕하세요.</h1>
+					<p data-animation="animated bounceInDown">저의 홈페이지에 오신것을 환영합니다.</p>
+					<button  type="button" name="emails" data-animation="animated bounceInUp" class="button button--tamaya button--border-thick" data-text="Send" data-toggle="modal" data-target="#emailmodal" data-whatever="@mdo"><span>Send</span></button>
+				  </div>
+				</div>
+				<div class="item"><img class="img-responsive" src="image/gd.jpg" alt="">
+					<div class="carousel-caption">
+					  <h1  data-animation="animated zoomInLeft" class="cap-txt ">공부합시다.</h1>
+					  <p data-animation="animated bounceInDown">아는 만큼 보인다.</p>
+					  <button  type="button" name="emails" data-animation="animated bounceInUp" class="button button--tamaya button--border-thick" data-text="Send" data-toggle="modal" data-target="#emailmodal" data-whatever="@mdo"><span>Send</span></button>
+					</div>
+				  </div>
+				<div class="item"><img class="img-responsive" src="https://ununsplash.imgix.net/photo-1416339276121-ba1dfa199912?q=75&fm=jpg&s=9bf9f2ef5be5cb5eee5255e7765cb327" alt="">
+				  <div class="carousel-caption animated slideInLeft">
+					<h1 data-animation="animated zoomInLeft" class="cap-txt">다같이 즐겨주세요.</h1>
+					<p data-animation="animated bounceInDown">이 홈페이지는 어쩔 수 없이 만들어졌습니다.</p>
+					<button type="button" name="emails" data-animation="animated bounceInUp" class="button button--tamaya button--border-thick" data-text="Send" data-toggle="modal" data-target="#emailmodal" data-whatever="@mdo"><span>Send</span></button>
+				  </div>
+				</div>
+			<a class="carousel-control left" href="#sg-carousel" data-slide="prev">‹</a>
+			<a class="carousel-control right" href="#sg-carousel" data-slide="next">›</a>
+		</div> 
+	</div>
+</div>
+
+
+<div class="modal fade" id="emailmodal" tabindex="-1" role="dialog" aria-labelledby="emailModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="emailModalLabel">관리자에게 문의하기</h4>
+      </div>
+      <div class="modal-body">
+        <form id="emailform" name="emailform" method="POST">
+          <div class="form-group">
+            <label for="email" class="control-label">이메일:</label>
+			<input type="email" name="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">메시지:</label>
+            <textarea name="message-text" class="form-control" id="message-text" rows="10"></textarea>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">닫 기</button>
+        <button type="button" id="emailsummit" class="btn btn-success">이메일 보내기</button>
+	</form>
+	</div>
+    </div>
+  </div>
+</div>
+
+<!-- <button type="button" class="btn btn-primary" onclick="modal();">Open and close in 3 secs</button>
+
+<div class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered justify-content-center" role="document">
+        <span class="fa fa-spinner fa-spin fa-3x"></span>
+    </div>
+</div>
+<script>
+
+function modal(){
+        $('.modal').modal('show');
+            setTimeout(function () {
+               console.log('completed');
+               $('.modal').modal('hide');
+        }, 3000);
+    }
+</script>
+ -->
+
+	<!-- <div class="container">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="http://placehold.it/1200x400/16a085/ffffff&text=About Us">
+						<div class="carousel-caption">
+							<h3>
+								Headline</h3>
+							<p>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+								tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem
+								ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="http://placehold.it/1200x400/e67e22/ffffff&text=Projects">
+						<div class="carousel-caption">
+							<h3>
+								Headline</h3>
+							<p>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+								tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem
+								ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="http://placehold.it/1200x400/2980b9/ffffff&text=Portfolio">
+						<div class="carousel-caption">
+							<h3>
+								Headline</h3>
+							<p>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+								tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem
+								ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="http://placehold.it/1200x400/8e44ad/ffffff&text=Services">
+						<div class="carousel-caption">
+							<h3>
+								Headline</h3>
+							<p>
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+								tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem
+								ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+						</div>
+					</div>
+				</div>
+				<ul class="nav nav-pills nav-justified">
+					<li class="change" data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">About<small>Lorem
+						ipsum dolor sit</small></a></li>
+					<li class="change" data-target="#myCarousel" data-slide-to="1"><a href="#">Projects<small>Lorem ipsum
+						dolor sit</small></a></li>
+					<li class="change" data-target="#myCarousel" data-slide-to="2"><a href="#">Portfolio<small>Lorem ipsum
+						dolor sit</small></a></li>
+					<li class="change" data-target="#myCarousel" data-slide-to="3"><a href="#">Services<small>Lorem ipsum
+						dolor sit</small></a></li>
+				</ul>
+			</div>
+		</div> -->
+
+		<hr>
+
+
+
+		 <!-- 밑에 부분 -->
+	<footer style="background-color:#000000;color:#ffffff">
+		<div class="container">
+			<br>
+			<div class="row">
+				<div class="col-sm-4" style="text-align:left;"><h5>Copyright &copy; 2019</h5><h5>SeungMin's js project</h5></div>
+				<div class="col-sm-4" style="text-align:left;"><h4>홈페이지 소개</h4><p>이 페이지는 어쩔 수 없이 만들어졌습니다.</p></div>
+				<div class="col-sm-2"><h4 style="text-align:center;">목 차</h4>
+					<div class="list-group">
+						<a href="main.html" class="list-group-item">메인</a>
+						<a href="board.html" class="list-group-item">게시판</a>
+						<a href="login.html" class="list-group-item">로그인</a>
+					</div>
+				</div>
+				<div class="col-sm-2"><h4 style="text-align:center;"><span class="glyphicon glyphicon-ok"></span>&nbsp;by SA</h4></div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/logout.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>

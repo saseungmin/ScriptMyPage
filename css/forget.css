@@ -1,0 +1,27 @@
+.jumbotron{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+
+h2{
+    margin-bottom: 30px;
+    margin-top:10px ;
+}
+.col-sm-9{
+    margin-bottom: 10px;
+}
+.col-sm-3{
+    margin-top: 5px;
+}
+
+.btn btn-success form-control{
+    margin-top: 5px;
+}
+
+hr{
+    margin-top:80px ;
+    margin-bottom:35px ;
+}

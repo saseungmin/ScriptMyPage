@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTP-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/text.css">
+<link rel="stylesheet" href="css/forget.css">
+
+<title>seungmin</title>
+</head>
+<body>
+	<nav class="navbar navbar-inverse" style="margin-bottom:150px;">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed"
+				data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+				aria-expanded="false">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="main.html">SeungMin</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a href="main.html">메인</a></li>
+				<li><a href="manager.html">홈페이지 소개</a></li>
+				<li><a href="board.html">게시판</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+         		<li class="dropdown">
+          			<a href="#" class="dropdown-toggle" 
+            			data-toggle="dropdown" role="button" aria-haspopup="true" 
+            			aria-expanded="false">접속하기 <span class="caret"></span></a>
+        			<ul class="dropdown-menu">
+              			<li id="login_li" style="display: block;"><a href="login.html"><span class="glyphicon glyphicon-log-in"></span>&nbsp;로그인</a></li>
+              			<li id="join_li"><a href="join.html"><span class="glyphicon glyphicon-user"></span>&nbsp;회원가입</a></li>
+           			 </ul>    
+         		</li>
+       		</ul>
+			<ul class="nav navbar-nav navbar-right">
+         		<li class="dropdown">
+          			<a href="#" class="dropdown-toggle" 
+            			data-toggle="dropdown" role="button" aria-haspopup="true" 
+            			aria-expanded="false">회원관리 <span class="caret"></span></a>
+        			<ul class="dropdown-menu">
+						<li id="userSetting" style="display: block;"><a href="member.html"><span class="glyphicon glyphicon-cog"></span>&nbsp;회원관리</a></li>
+						<li id="logout_li" style="display: block;"><a href="#"><span class="glyphicon glyphicon-log-out"></span>&nbsp;로그아웃</a></li>
+						<li><a href="agree.html"><span class="glyphicon glyphicon-check"></span>&nbsp;이용약관</a></li>
+           			</ul>    
+         		</li>
+       		</ul>			
+		</div>
+	</nav>
+
+
+
+
+	<div class="container-fluid">
+		<div class="col-lg-4"></div>
+		<div class="col-lg-4">
+			<div class="jumbotron">
+				<form>
+					<h2 style="text-align: center;">아이디 찾기</h2>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label" for="userName">이름</label>
+						<div class="col-sm-9">
+							<input class="form-control" id="userName" type="text" placeholder="이름" name="userName">
+						</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label" for="userEmail">이메일</label>
+						<div class="col-sm-9">
+							<input class="form-control" id="userEmail" type="email" placeholder="이메일" name="userEmail">
+						</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label" for="userNumber">휴대전화</label>
+						<div class="col-sm-9">
+							<input class="form-control" id="userNumber" type="tel" placeholder="휴대전화번호" name="userNumber">
+						</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label" for="userbrith">생년월일</label>
+						<div class="col-sm-9">
+							<input class="form-control" id="userbrith" type="date" placeholder="생년월일" name="userbrith">
+						</div>
+                    </div>
+                    <div class="form-group">
+                        <div class="text-center">
+                        <input type="button" class="btn btn-success" value="아이디 찾기" id="findId" style="margin-top: 30px;">
+                        </div>
+                    </div>
+				</form>
+			</div>
+		</div>
+		<div class="col-lg-4"></div>
+	</div>
+	<hr>
+	
+	
+	
+	
+		 <!-- 밑에 부분 -->
+	<footer style="background-color:#000000;color:#ffffff">
+		<div class="container">
+			<br>
+			<div class="row">
+				<div class="col-sm-4" style="text-align:left;"><h5>Copyright &copy; 2019</h5><h5>seungmin's js project</h5></div>
+				<div class="col-sm-4" style="text-align:left;"><h4>홈페이지 소개</h4><p>이 페이지는 어쩔 수 없이 만들어졌습니다.</p></div>
+				<div class="col-sm-2"><h4 style="text-align:center;">목 차</h4>
+					<div class="list-group">
+						<a href="main.html" class="list-group-item">메인</a>
+						<a href="board.html" class="list-group-item">게시판</a>
+						<a href="login.html" class="list-group-item">로그인</a>
+					</div>
+				</div>
+				<div class="col-sm-2"><h4 style="text-align:center;"><span class="glyphicon glyphicon-ok"></span>&nbsp;by SA</h4></div>
+			</div>
+		</div>
+    </footer>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/logout.js"></script>
+
+	<script type="text/javascript" src="js/forget.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>
