@@ -1,6 +1,7 @@
 # ScriptMyPage
 
 1. 개인 홈페이지 구현
+- linux mint
 - 개발 툴 : visual studio code
 - javascript / html / css 만을 사용하여 개발
 - localstorage(database 대신) / sessionstorage
