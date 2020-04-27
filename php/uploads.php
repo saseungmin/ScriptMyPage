@@ -34,7 +34,7 @@ echo "Sorry, your file was not uploaded.";
 if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
 //echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
 // 실제 사용할 때는 보통 마지막에 경로/파일명 문자열을 리턴
-$imgURL="http://192.168.20.51/jsstudy/project3/php/upload/";
+$imgURL="../upload/";
 echo $imgURL.basename($_FILES["fileToUpload"]["name"]);
 } else {
 echo "Sorry, there was an error uploading your file.";
