@@ -73,7 +73,7 @@ window.onload = function(){
                         
                         $.ajax({
                         method:"post", // 파일업로드는 무조건 post
-                        url: "../project3/php/uploads.php",
+                        url: "../php/uploads.php",
                         // data에 파일 객체를 넘겨줘야 함
                         data: v_formData, // 생성된 file데이타가 포함된 FormData를 붙여준다
                         cache: false, // 필수는 아니고 추천
